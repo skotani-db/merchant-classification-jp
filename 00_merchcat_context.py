@@ -20,9 +20,9 @@
 # COMMAND ----------
 
 # MAGIC %md
-# MAGIC &copy; 2021 Databricks, Inc. All rights reserved. The source in this notebook is provided subject to the [Databricks License](https://databricks.com/db-license-source).  All included or referenced third party libraries are subject to the licenses set forth below.
+# MAGIC &copy; 2021 Databricks, Inc. All rights reserved. 本ノートブックのソースコードは [Databricks ライセンス](https://databricks.com/db-license-source) に従って提供されています。含まれる、または参照されるすべてのサードパーティライブラリは以下のライセンスに従います。
 # MAGIC 
-# MAGIC | library                                               | description             | license    | source                                              |
+# MAGIC | ライブラリ                                            | 説明                    | ライセンス | ソース                                              |
 # MAGIC |-------------------------------------------------------|-------------------------|------------|-----------------------------------------------------|
-# MAGIC | fasttext                                              | NLP library             | BSD License| https://fasttext.cc/                                   |
-# MAGIC | PyYAML                                 | Reading Yaml files      | MIT        | https://github.com/yaml/pyyaml                      |
+# MAGIC | fasttext                                              | NLP ライブラリ          | BSD License| https://fasttext.cc/                                   |
+# MAGIC | PyYAML                                 | YAML ファイルの読み込み | MIT        | https://github.com/yaml/pyyaml                      |

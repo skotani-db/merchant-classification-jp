@@ -16,12 +16,12 @@ ___
 
 ___
 
-&copy; 2021 Databricks, Inc. All rights reserved. The source in this notebook is provided subject to the [Databricks License](https://databricks.com/db-license-source).  All included or referenced third party libraries are subject to the licenses set forth below.
+&copy; 2021 Databricks, Inc. All rights reserved. 本ノートブックのソースコードは [Databricks ライセンス](https://databricks.com/db-license-source) に従って提供されています。含まれる、または参照されるすべてのサードパーティライブラリは以下のライセンスに従います。
 
-| library                                               | description             | license    | source                                              |
+| ライブラリ                                            | 説明                    | ライセンス | ソース                                              |
 |-------------------------------------------------------|-------------------------|------------|-----------------------------------------------------|
-| fasttext                                              | NLP library             | BSD License| https://fasttext.cc/                                   |
-| PyYAML                                 | Reading Yaml files      | MIT        | https://github.com/yaml/pyyaml                      |
+| fasttext                                              | NLP ライブラリ          | BSD License| https://fasttext.cc/                                   |
+| PyYAML                                 | YAML ファイルの読み込み | MIT        | https://github.com/yaml/pyyaml                      |
 
 ## 使い方
 このアクセラレーターを実行するには、本リポジトリを Databricks ワークスペースにクローンしてください。Databricks ウェブサイトに公開されているバージョンのノートブックを実行したい場合は `web-sync` ブランチに切り替えてください。DBR 11.0 以降のランタイムを持つ任意のクラスターに `RUNME` ノートブックをアタッチし、「すべて実行」でノートブックを実行してください。アクセラレーターのパイプラインを記述したマルチステップジョブが作成され、そのリンクが表示されます。マルチステップジョブを実行してパイプラインの動作を確認してください。ジョブの設定は RUNME ノートブックに JSON 形式で記述されています。アクセラレーター実行に伴うコストはユーザーの責任となります。
