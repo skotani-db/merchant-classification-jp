@@ -155,12 +155,8 @@ from utils.merchcat_utils import *
 
 # COMMAND ----------
 
-# fasttext モデルは cloudpickle で自動的にピクルスできないため、/dbfs にモデルを保存する
-# この分散ストレージは全エグゼキューターから書き込み可能なようにディスクにマウントされている
-fasttext_home = f"/dbfs{config['model']['path']}"
-
-# モデルディレクトリがまだ存在しない場合は作成する
-dbutils.fs.mkdirs(config['model']['path'])
+# fasttext モデルは cloudpickle で自動的にピクルスできないため、Volume にモデルを保存する
+fasttext_home = f"/Volumes/{config['model']['catalog']}/{config['model']['schema']}/fasttext"
 
 # COMMAND ----------
 
@@ -471,15 +467,15 @@ version = result.version
 # COMMAND ----------
 
 client = mlflow.tracking.MlflowClient()
-client.transition_model_version_stage(
+client.set_registered_model_alias(
     name=config['model']['name'],
-    version=version,
-    stage="Production"
+    alias="champion",
+    version=version
 )
 
 # COMMAND ----------
 
-logged_model = f"models:/{config['model']['name']}/production"
+logged_model = f"models:/{config['model']['name']}@champion"
 loaded_model = mlflow.pyfunc.load_model(logged_model)
 
 # COMMAND ----------

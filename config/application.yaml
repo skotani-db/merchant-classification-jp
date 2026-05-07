@@ -4,8 +4,9 @@ transactions:
   
 model: 
   executors: 20
-  path: '/FileStore/solution_accelerators/merchcat/fasttext'
-  name: 'merchcat'
+  catalog: 'main'
+  schema: 'merchcat'
+  name: 'main.merchcat.merchcat'
   train:
     raw: '/FileStore/solution_accelerators/merchcat/labeled_transactions_train_raw'
     hex: '/FileStore/solution_accelerators/merchcat/labeled_transactions_train_hex'
